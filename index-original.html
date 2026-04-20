@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Guiding Lantern Press</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Georgia', serif; }
+        
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+       /* --- Navigation Bar --- */
+        nav {
+            background-color: #111;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom:2px solid #f1c40f;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #f1c40f; /* Lantern Gold */
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            text-shadow: 0 0 8px #f1c40f;
+        }
+
+        /* Top Banner */
+        .top-banner {
+            width: 100%;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #f1c40f;
+        }
+
+        .top-banner h1 {
+            margin: 0;
+            line-height: 2; /* keeps the lines tight */
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            letter-spacing: 2px;
+        }
+
+        /* Logo and Main Content */
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+
+        }
+
+        /* --- Logo Styling --- */
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo-container img {
+            max-width: 200px; /* Adjust this size to fit your logo */
+            height: auto;
+            display: block;
+        }
+
+        h2 { font-size: 2.2rem; margin-bottom: 15px; color: #f1c40f; }
+        p { font-size: 1.1rem; margin-bottom: 30px; max-width: 550px; line-height: 1.6; opacity: 0.9; }
+
+        /* Form */
+        .email-box { display: flex; gap: 10px; }
+        input[type="email"] {
+            padding: 12px 20px;
+            border-radius: 4px;
+            border: 1px solid #444;
+            width: 300px;
+<form action="https://formspree.io" method="POST" class="email-box">
+    <!-- The 'name' attribute is required for Formspree to collect the data -->
+    <input type="email" name="email" placeholder="Enter your email address" required>
+    <input type="hidden" name="_next" value="https://yourwebsite.com">
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button type="submit">Notify Me</button>
+</form>
+        }
+        button {
+            padding: 12px 30px;
+            border-radius: 4px;
+            border: none;
+            background-color: #f1c40f;
+            color: #111;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover { background-color: #d4ac0d; }
+
+        @media (max-width: 600px) {
+            .top-banner h1 { font-size: 1.8rem; height: 150px; }
+            .email-box { flex-direction: column; width: 100%; }
+            input[type="email"] { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+   
+    <header class="top-banner">
+        <h1>Guiding Lantern Press</h1>
+    </header>
+ <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="titles.html">Titles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="content">
+        <!-- Logo Section -->
+        <div class="logo-container">
+            <!-- REPLACE 'logo.svg' WITH YOUR ACTUAL FILENAME BELOW -->
+            <img src="images/GuidingLantern-logo-silver.webp" alt="Guiding Lantern Press Logo">
+        </div>
+
+        <h2>Lighting the Way to Great Stories</h2>
+        <p>Our shelves are currently being stocked with new adventures. Join our inner circle to be notified the moment we launch.</p>
+        <p>Still under construction!</p>
+        
+        <form class="email-box">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Notify Me</button>
+        </form>
+    </main>
+
+</body>
+</html>

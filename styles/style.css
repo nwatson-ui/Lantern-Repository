@@ -1,0 +1,195 @@
+/* --- STYLES FOR GUIDING LANTERN PRESS --- */
+
+        * { margin: 0; 
+            padding: 0; 
+	    box-sizing: 
+	    border-box; 
+	    font-family: 'Georgia', serif; 
+	}
+        
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+ 
+            background-image: url("../images/paperbkg.webp");
+            background-size: auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+      /* Top Banner */
+        .top-banner {
+            width: 100%;
+            background: #262013;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #ebae34;
+            padding: 20px 0;  /* AI added */
+      
+/* --- If you want the paper bkground ---*/
+	/* --- background-image: url("../images/paperbkg.webp");
+            background-size: auto;
+            background-repeat: repeat;
+            background-attachment: fixed; --- */
+      
+        }
+
+        .top-banner h1 {
+            margin: 0;
+            line-height: 2; /* keeps the lines tight */
+	    color: #f1c40f;
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            letter-spacing: 2px;
+        }
+      
+       /* --- Navigation Bar --- */
+        nav {
+            background-color: #5e4e2c;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom:3px solid #ebae34;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #f1c40f; /* Lantern Gold */
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            text-shadow: 0 0 8px #f1c40f;
+        }
+
+  
+
+        /* Logo and Main Content */
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: top;
+            align-items: center;
+            padding: 30px 20px;
+
+        }
+
+        /* --- Logo Styling --- */
+        .logo-container {
+            margin-bottom: 30px;
+        }
+
+        .logo-container img {
+            max-width: 175px; /* Adjust this size to fit your logo */
+            height: auto;
+            display: block;
+        }
+/* --- Book List--- */
+       book {
+            background-color: #5e4e2c;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #333;
+        }
+
+        book ul {
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            gap: 30px;
+        }
+
+        book ul li a {
+            color: #e6e8dc; /* selection */
+            text-decoration: none;
+            font-size: 0.9rem;
+            text-transform: none;
+            letter-spacing: 1.5px;
+            transition: 0.3s;
+        }
+
+        book ul li a:hover {
+            color: white;
+            text-shadow: 0 0 8px #f1c40f;
+        }
+
+/* --- Heading 2 and P text --- */
+        h2 { font-size: 2.2rem; margin-bottom: 15px; color: #f1c40f; 
+	      text-shadow: 2px 2px 2px rgba(0,0,0,1);
+	}
+        p { font-size: 1.1rem; margin-bottom: 30px; max-width: 550px; line-height: 1.6; opacity: 0.9; color: #5e4e2c; }
+
+/* --- Heading 3 --- */
+   h3 { 
+	font-size: 2rem; 
+	margin-bottom: 15px; 
+	color: #ebae34;  /*light chocolate */
+	text-shadow: 2px 2px 2px rgba(0,0,0,1);
+	font-style: italic;
+	}
+  p { 
+	font-size: 1.1rem; 
+	margin-bottom: 30px; 
+	max-width: 550px; 
+	line-height: 1.6; 
+	opacity: 0.9; 
+	color: #5e4e2c; 
+	}
+ p2 { 
+	font-size: 2rem; 
+	margin-bottom: 30px; 
+	max-width: 550px; 
+	line-height: 1.6; 
+	opacity: 0.9; 
+	color: red; 
+	}
+
+
+ /* Form */
+ .email-box { 
+            display: flex; 
+            gap: 10px; 
+            justify-content: center;
+}
+ 
+</form>
+        }
+        button {
+            padding: 12px 30px;
+            border-radius: 4px;
+            border: none;
+            background-color: #f1c40f;
+            color: #111;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover { background-color: #d4ac0d; }
+
+        @media (max-width: 600px) {
+            .top-banner h1 { font-size: 1.8rem; height: 150px; }
+            .email-box { flex-direction: column; width: 100%; }
+            input[type="email"] { width: 100%; }
+        }
+
