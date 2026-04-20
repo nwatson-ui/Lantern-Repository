@@ -35,9 +35,8 @@
             we launch.</p>
         <p>Still under construction!</p>
 
-        <form class="email-box">
-
-            <form action="https://formspree.io" method="POST" class="email-box">
+       
+            <form action="https://formspree.io" method="POST" class="email-box" class="email-box">
                 <!-- The 'name' attribute is required for Formspree to collect the data -->
                 <input type="email" name="email" placeholder="Enter your email address" required>
 
@@ -46,11 +45,12 @@
                 <!--Anti-spam field-->
                 <input type="text" name="_gotcha" style="display:none">
 
-                <button type="submit">Notify Me</button>
-
+                <!--<button type="submit">Notify Me</button> -->
+                <button type="button" onclick="showConstructionMessage()">Notify Me</button>
             </form>
     </main>
-
+<!-- Link to your JS subfolder -->
+<script src="js/script.js"></script>
 </body>
 
 </html>
