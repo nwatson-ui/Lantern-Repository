@@ -193,3 +193,26 @@
             input[type="email"] { width: 100%; }
         }
 
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: sans-serif;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.socials a {
+    color: #ffcc00;
+    /* Use your brand color here */
+    text-decoration: none;
+}
