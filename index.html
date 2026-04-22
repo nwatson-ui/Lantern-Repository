@@ -35,21 +35,22 @@
             we launch.</p>
         <p>Still under construction!</p>
 
-       <!-- Copy this form to every page in the website where you -->
+<!-- Replace {form_id} with your actual Formspree form ID in the action URL below -->
             <form action="https://formspree.io/f/{form_id}" method="POST" class="email-box" >
-                <!-- The 'name' attribute is required for Formspree to collect the data -->
+               
                 <input type="email" name="email" placeholder="Enter your email address" required>
 
-                <!-- Where to send the user after they click submit -->
+               
                 <input type="hidden" name="_next" value="https://guidinglanternpress.com/thank-you.html">
-                <!--Anti-spam field-->
+               
                 <input type="text" name="_gotcha" style="display:none">
 
-                <!--<button type="submit">Notify Me</button> Go back to this code when you're ready -->
-                <button type="button" onclick="ShowConstructionMessage()">Notify Us</button>
+               
+                <button type="button" onclick="ShowConstructionMessage()">Notify Me!</button>
             </form>
-            <!-- Link to your JS subfolder -->
+           
             <script src="java/script.js"></script>
+          
     </main>
 <footer>
     <div class="footer-content">
