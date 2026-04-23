@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link rel="stylesheet" href="styles/style.css">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coming Soon |Guiding Lantern Press</title>
-    {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Guiding Lantern Press LLC",
-    "url": "https://guidinglanternpress.com",
-    "founder": {
-    "@type": "Person",
-    "name": "Nancy Watson"
-    },
-    "description": "An independent publishing house specializing in investigative true crime narratives.",
-    "status": "Active",
-    "sameAs": [
-    "https://andrewchronicles.org",
-    ]
-    }
-
+    <!-- Corrected Schema.org Block -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Guiding Lantern Press LLC",
+            "url": "https://guidinglanternpress.com",
+            "founder": {
+                "@type": "Person",
+                "name": "Nancy Watson"
+            },
+            "description": "An independent publishing house specializing in investigative true crime narratives.",
+            "status": "Active",
+            "sameAs": [
+                "https://andrewchronicles.org"
+            ]
+        }
+        </script>
 </head>
 
 <body>
@@ -40,15 +41,18 @@
     <main class="content">
 
         <!-- Logo Section -->
-        <div class="logo-container">
-            <img src="images/GuidingLantern-LOGO.webp" alt="GLP Logo">
-        </div>
-
+    <div class="logo-container">
+        <!-- REPLACE 'logo.svg' WITH YOUR ACTUAL FILENAME BELOW -->
+        <img src="images/guidinglantern_logo.webp"
+            alt="Traditional black lantern logo with glowing orange flame symbolizing guiding light ">
+        ">
+    </div>
         <h2>Home</h2> <br>
         <h3>Lighting the Way to Great Stories</h3>
         <p>Our shelves are currently being stocked with new adventures. Join our inner circle to be notified the moment
             we launch.</p>
-        <p>Still under construction!</p>
+            </div>
+        
 
 <!-- Replace {form_id} with your actual Formspree form ID in the action URL below -->
             <form action="https://formspree.io/f/{form_id}" method="POST" class="email-box" >
