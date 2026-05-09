@@ -1,0 +1,168 @@
+:root {
+    --font-family: 'Imprint MT Shadow', 'Roboto', 'Algerian' sans-serif;
+    --padding-base: 1rem;
+    --primary-color: #685B34;
+    --accent-color: #f0ca7a;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 10px;
+    position: relative;
+    /* this is the anchor for logo */
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+nav ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    border-bottom: var(--accent-color) solid 0.5rem;
+    font-family: var(--font-family);
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: -10%;
+    left: 45px;
+    transform: translateY(-50%);
+    width: 150px;
+    height: auto;
+}
+
+.andrew {
+    width: 400px;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.book {
+    width: 400px;
+    height: auto;
+}
+
+.call-to-action {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: var(--font-family);
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    margin: 0;
+}
+
+.wall {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    margin: 0;
+    color: var(--accent-color);
+    z-index: 1;
+}
+
+.construction {
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+    font-weight: 600;
+    border: black solid 0.5rem;
+}
+
+
+h1 {
+    font-size: 3rem;
+    text-shadow: black 0 0 2rem;
+    font-family: var(--font-family);
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: Roboto;
+}
+
+h3 {
+    font-family: 'Imprint MT Shadow';
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+p {
+    font-family: roboto;
+}
+
+.content-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem 2rem;
+}
+
+.content-row>section,
+.content-row>div {
+    flex: 1;
+}
+
+.content-row img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .content-row {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: clamp(1.6rem, 5vw, 3rem);
+        text-shadow: black 0 0 1rem;
+        line-height: 1.1;
+        padding: 0 0.5rem;
+    }
+}
