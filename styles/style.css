@@ -226,6 +226,7 @@ footer {
 .footer-center {
     flex: 1;
     text-align: center;
+    text-decoration: none;
 
 }
 
